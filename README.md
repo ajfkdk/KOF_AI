@@ -52,6 +52,9 @@ self.brain.replayer.store(
 
 如果你有兴趣阅读源码可能看得到自动录制对战视频的代码注释，但我实现这个功能中遇到了一些困难，我的想法是弄一个自动把胜利对局的视频录制下来，但是使用opencv实现了一个demo，集成到我的AI代码中发现无法存游戏画面的数据，于是使用了ffmpeg做了一个可用的demo，集成到AI代码同样出现了无法保存游戏画面的数据，非常奇怪的问题，但时间有限只好作罢（做游戏精彩画面录制的时候还把好不容易搞起来的环境搞崩了emo一阵子，好在最后成功复原）<br />最后在训练数据可视化上面我做的并不是很好，我采用了matplotlib.pyplot来用把游戏训练的胜利数据导出来如下图：<br />![reward_10000.png](https://cdn.nlark.com/yuque/0/2023/png/29611082/1683123779857-7f141ce5-7cff-46e9-80cd-4d73d3cf59dd.png#averageHue=%23fcf8f7&clientId=u6b9fb3aa-6551-4&from=paste&height=600&id=u0d40c6c3&originHeight=600&originWidth=1200&originalType=binary&ratio=1&rotation=0&showTitle=false&size=48752&status=done&style=none&taskId=u60993040-5bab-42bb-9a4f-2e3751b27f1&title=&width=1200)<br />如图这个AI的胜率还是蛮高的（拳皇Wing-难度2），我自己亲自和AI对打如果不是利用AI不太擅长防御远程攻击的弱点，基本打不过它。
 <a name="0f1bea9b"></a>
+
+##  效果展示
+https://www.bilibili.com/video/BV1Ro4y1w71h/
 ## 致谢
 
 感谢B站UP主[林亦LYi](https://space.bilibili.com/4401694?spm_id_from=333.337.0.0)、[蓝魔digital](https://space.bilibili.com/270844959?spm_id_from=333.337.search-card.all.click)、[遇上雨也笑笑](https://www.bilibili.com/video/BV1NK411w7Rp/?spm_id_from=333.337.search-card.all.click&vd_source=bf823389b65483590a312cedf448bec4)等提供的灵感和帮助，感谢论文《[Mitigating Cowardice for Reinforcement Learning](https://ieee-cog.org/2022/assets/papers/paper_111.pdf) 》中相关的作者提供的思路
